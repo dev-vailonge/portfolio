@@ -26,4 +26,4 @@ A clean, modern portfolio website built with HTML, Tailwind CSS, and JavaScript.
 - **Books**: Curated reading recommendations
 
 ## 🌐 Live Demo
-Visit the website at: [roquebuarque.com](https://roquebuarque.com)
+Visit the website at: [roquebuarque.com](https://roquebuarque.vercel.app/)
