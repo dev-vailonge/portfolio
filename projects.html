@@ -27,28 +27,25 @@
   <body class="bg-dark text-white min-h-screen">
     <!-- Navigation -->
     <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a
-          href="index.html"
-          class="text-xl font-semibold flex items-center gap-2"
+      <div class="container mx-auto px-6 py-4">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
         >
-          Roque Buarque
-        </a>
-        <div class="flex gap-8">
-          <a href="about.html" class="hover:text-gray-300 transition-colors"
-            >Sobre</a
-          >
-          <a href="content.html" class="hover:text-gray-300 transition-colors"
-            >Conteúdo</a
-          >
-          <a href="projects.html" class="text-blue-400 transition-colors"
-            >Projetos</a
-          >
-          <a href="books.html" class="hover:text-gray-300 transition-colors"
-            >Livros</a
-          >
+          <a href="index.html" class="text-xl font-semibold">Roque Buarque</a>
+          <div class="flex flex-wrap gap-4 sm:gap-8">
+            <a href="about.html" class="hover:text-gray-300 transition-colors"
+              >Sobre</a
+            >
+            <a href="content.html" class="hover:text-gray-300 transition-colors"
+              >Conteúdo</a
+            >
+            <a href="projects.html" class="text-blue-400 transition-colors"
+              >Projetos</a
+            >
+            <a href="books.html" class="hover:text-gray-300 transition-colors"
+              >Livros</a
+            >
+          </div>
         </div>
       </div>
     </nav>
@@ -59,120 +56,125 @@
         <h1 class="text-5xl font-bold mb-16 text-center">Projetos</h1>
 
         <!-- Projects Grid -->
-        <div class="grid gap-12">
+        <div class="grid gap-6 sm:gap-12">
           <!-- DevSpace -->
-          <div class="bg-[#1C1F21]/50 rounded-2xl p-8 backdrop-blur-sm">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div class="relative group">
+          <div
+            class="bg-[#1C1F21]/50 rounded-xl sm:rounded-2xl p-4 sm:p-8 backdrop-blur-sm"
+          >
+            <div class="flex flex-col gap-4 sm:gap-8">
+              <div class="relative group w-full">
                 <img
                   src="img/devspace.png"
                   alt="DevSpace Screenshot"
-                  class="project-image rounded-xl w-full shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
+                  class="project-image rounded-lg sm:rounded-xl w-full h-auto shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer object-cover"
                 />
               </div>
               <div class="flex flex-col">
-                <div class="flex items-center justify-between mb-4">
-                  <h2 class="text-4xl font-bold">DevSpace</h2>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4"
+                >
+                  <h2 class="text-2xl sm:text-4xl font-bold">DevSpace</h2>
                   <span
-                    class="px-4 py-1 bg-[#3A3A3A] text-green-400 rounded-full text-sm"
+                    class="inline-block px-3 sm:px-4 py-1 bg-[#3A3A3A] text-green-400 rounded-full text-sm text-center min-w-[80px]"
                   >
                     Ativo
                   </span>
                 </div>
-                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                  Uma comunidade para ensinar programação do zero de aplicativos
-                  para Android utilizando a linguagem Kotlin. Através de aulas
-                  gravadas e ao vivo, suporte, plano de estudos e uma comunidade
-                  ativa, ajudamos pessoas a iniciarem e evoluírem na carreira de
-                  programação.
+                <p
+                  class="text-gray-400 text-base sm:text-lg mb-4 sm:mb-8 leading-relaxed"
+                >
+                  Uma comunidade para ensinar programação do zero. Através de
+                  mentorias, conteúdos e uma comunidade ativa, ajudamos pessoas
+                  a iniciarem e evoluírem na carreira de programação.
                 </p>
-                <div class="flex flex-wrap gap-3 mt-auto">
-                  <span class="tech-tag">Education</span>
-                  <span class="tech-tag">Community</span>
-                  <span class="tech-tag">Programming</span>
+                <div class="flex flex-wrap gap-2 sm:gap-3">
+                  <span class="tech-tag text-sm">Education</span>
+                  <span class="tech-tag text-sm">Community</span>
+                  <span class="tech-tag text-sm">Mentorship</span>
+                  <span class="tech-tag text-sm">Programming</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- MentorSpace -->
-          <div class="bg-[#1C1F21]/50 rounded-2xl p-8 backdrop-blur-sm">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div class="relative group">
-                <a
-                  href="https://mentorspace.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="img/mentorspace.png"
-                    alt="MentorSpace Screenshot"
-                    class="project-image rounded-xl w-full shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
-                  />
-                </a>
+          <div
+            class="bg-[#1C1F21]/50 rounded-xl sm:rounded-2xl p-4 sm:p-8 backdrop-blur-sm"
+          >
+            <div class="flex flex-col gap-4 sm:gap-8">
+              <div class="relative group w-full">
+                <img
+                  src="img/mentorspace.png"
+                  alt="MentorSpace Screenshot"
+                  class="project-image rounded-lg sm:rounded-xl w-full h-auto shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer object-cover"
+                />
               </div>
               <div class="flex flex-col">
-                <div class="flex items-center justify-between mb-4">
-                  <h2 class="text-4xl font-bold">MentorSpace</h2>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4"
+                >
+                  <h2 class="text-2xl sm:text-4xl font-bold">MentorSpace</h2>
                   <span
-                    class="px-4 py-1 bg-[#3A3A3A] text-yellow-400 rounded-full text-sm"
+                    class="inline-block px-3 sm:px-4 py-1 bg-[#3A3A3A] text-yellow-400 rounded-full text-sm text-center min-w-[120px]"
                   >
-                    Em Desenvolvimento
+                    Desenvolvimento
                   </span>
                 </div>
-                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                <p
+                  class="text-gray-400 text-base sm:text-lg mb-4 sm:mb-8 leading-relaxed"
+                >
                   Uma plataforma de mentoria alimentada por IA que cria caminhos
                   de aprendizado estruturados para ajudar os usuários a
                   atingirem seus objetivos. Receba orientação personalizada,
                   acompanhe seu progresso e aprenda com um mentor de IA que se
                   adapta às suas necessidades.
                 </p>
-                <div class="flex flex-wrap gap-3 mt-auto">
-                  <span class="tech-tag">AI</span>
-                  <span class="tech-tag">MentorShip</span>
-                  <span class="tech-tag">Education</span>
+                <div class="flex flex-wrap gap-2 sm:gap-3">
+                  <span class="tech-tag text-sm">AI</span>
+                  <span class="tech-tag text-sm">MentorShip</span>
+                  <span class="tech-tag text-sm">Education</span>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- YouZit -->
-          <div class="bg-[#1C1F21]/50 rounded-2xl p-8 backdrop-blur-sm">
-            <div class="grid md:grid-cols-2 gap-8">
-              <div class="relative group">
-                <a
-                  href="https://youzit.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="img/youzit.png"
-                    alt="YouZit Screenshot"
-                    class="project-image rounded-xl w-full shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
-                  />
-                </a>
+          <div
+            class="bg-[#1C1F21]/50 rounded-xl sm:rounded-2xl p-4 sm:p-8 backdrop-blur-sm"
+          >
+            <div class="flex flex-col gap-4 sm:gap-8">
+              <div class="relative group w-full">
+                <img
+                  src="img/youzit.png"
+                  alt="YouZit Screenshot"
+                  class="project-image rounded-lg sm:rounded-xl w-full h-auto shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer object-cover"
+                />
               </div>
               <div class="flex flex-col">
-                <div class="flex items-center justify-between mb-4">
-                  <h2 class="text-4xl font-bold">YouZit</h2>
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4"
+                >
+                  <h2 class="text-2xl sm:text-4xl font-bold">YouZit</h2>
                   <span
-                    class="px-4 py-1 bg-[#3A3A3A] text-yellow-400 rounded-full text-sm"
+                    class="inline-block px-3 sm:px-4 py-1 bg-[#3A3A3A] text-yellow-400 rounded-full text-sm text-center min-w-[120px]"
                   >
-                    Em Desenvolvimento
+                    Desenvolvimento
                   </span>
                 </div>
-                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                <p
+                  class="text-gray-400 text-base sm:text-lg mb-4 sm:mb-8 leading-relaxed"
+                >
                   Uma plataforma alimentada por IA para criadores de conteúdo
                   construírem e gerenciarem seu ecossistema de conteúdo. Obtenha
                   insights inteligentes, ideias de conteúdo e recomendações
                   estratégicas para aumentar seu público e melhorar o
                   engajamento.
                 </p>
-                <div class="flex flex-wrap gap-3 mt-auto">
-                  <span class="tech-tag">Content Creation</span>
-                  <span class="tech-tag">AI</span>
-                  <span class="tech-tag">Analytics</span>
-                  <span class="tech-tag">Social Media</span>
+                <div class="flex flex-wrap gap-2 sm:gap-3">
+                  <span class="tech-tag text-sm">Content Creation</span>
+                  <span class="tech-tag text-sm">AI</span>
+                  <span class="tech-tag text-sm">Analytics</span>
+                  <span class="tech-tag text-sm">Social Media</span>
                 </div>
               </div>
             </div>
