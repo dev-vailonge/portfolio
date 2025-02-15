@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre - Roque Buarque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21",
+              "button-gray": "rgba(255, 255, 255, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold flex items-center gap-2"
+        >
+          Roque Buarque
+        </a>
+        <div class="flex gap-8">
+          <a href="about.html" class="text-blue-400 transition-colors">Sobre</a>
+          <a href="content.html" class="hover:text-gray-300 transition-colors"
+            >Conteúdo</a
+          >
+          <a href="projects.html" class="hover:text-gray-300 transition-colors"
+            >Projetos</a
+          >
+          <a href="books.html" class="hover:text-gray-300 transition-colors"
+            >Livros</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <main class="pt-32 min-h-screen container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex flex-col items-center mb-12">
+          <img
+            src="img/roque.png"
+            alt="Roque Buarque"
+            class="w-40 h-40 rounded-full mb-8 border-2 border-white/10"
+          />
+          <h1 class="text-4xl font-bold mb-4">Sobre Mim</h1>
+          <h2 class="text-xl text-gray-400">
+            Android Software Engineer @Spotify
+          </h2>
+        </div>
+
+        <div class="space-y-8">
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Olá! 👋</h3>
+            <p class="text-gray-400 leading-relaxed">
+              Sou Roque, programador, criador de conteúdo e empreendedor
+              digital. Trabalho no Spotify e fundei a DevSpace, uma comunidade
+              que ensina programação do zero, e o MentorSpace, um SaaS para
+              mentorias.
+            </p>
+            <p class="text-gray-400 leading-relaxed mt-4">
+              Produzo conteúdo no YouTube e redes sociais, compartilhando minha
+              jornada e ensinando programação de forma prática. Também escrevo a
+              newsletter O Programador Independente, ajudando desenvolvedores a
+              usarem seu conhecimento para alcançar independência na carreira ou
+              no empreendedorismo.
+            </p>
+          </div>
+
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Experiência 💼</h3>
+            <div class="space-y-6">
+              <div>
+                <h4 class="text-lg font-medium mb-2">Spotify</h4>
+                <p class="text-gray-400">Android Software Engineer</p>
+                <p class="text-gray-500 text-sm">2022 - Presente</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Educação 📚</h3>
+            <div>
+              <h4 class="text-lg font-medium mb-2">
+                Analise e desenvolvimento de sistemas
+              </h4>
+              <p class="text-gray-400">Uninove</p>
+              <p class="text-gray-500 text-sm">2012 - 2014</p>
+            </div>
+          </div>
+
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Habilidades 🚀</h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android</span>
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">Clean Architecture</span>
+              <span class="tech-tag">MVVM</span>
+              <span class="tech-tag">Jetpack Compose</span>
+              <span class="tech-tag">Git</span>
+              <span class="tech-tag">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Fontes de Renda</h3>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Através do meu conhecimento, construí diversas fontes de renda e,
+              por meio do meu conteúdo, te ajudo a fazer o mesmo. Aqui estão
+              algumas delas:
+            </p>
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Spotify (trabalho como programador)
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                DevSpace (comunidade para ensinar programação do zero)
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                YouTube (monetização de conteúdo e membros)
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                O Programador Independente (newsletter sobre independência na
+                programação)
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                MentorSpace - SaaS para mentorias (Em desenvolvimento)
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Youzit - SaaS para criação de conteúdo (Em desenvolvimento)
+              </li>
+              <li class="flex items-center gap-3 text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Parcerias, posts e vídeos patrocinados
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-400 text-sm mt-24">
+      <div class="container mx-auto px-4">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Vercel
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

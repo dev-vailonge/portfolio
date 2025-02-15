@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projetos - Roque Buarque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21",
+              "button-gray": "rgba(255, 255, 255, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold flex items-center gap-2"
+        >
+          Roque Buarque
+        </a>
+        <div class="flex gap-8">
+          <a href="about.html" class="hover:text-gray-300 transition-colors"
+            >Sobre</a
+          >
+          <a href="content.html" class="hover:text-gray-300 transition-colors"
+            >Conteúdo</a
+          >
+          <a href="projects.html" class="text-blue-400 transition-colors"
+            >Projetos</a
+          >
+          <a href="books.html" class="hover:text-gray-300 transition-colors"
+            >Livros</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <main class="pt-32 min-h-screen container mx-auto px-4">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-5xl font-bold mb-16 text-center">Projetos</h1>
+
+        <!-- Projects Grid -->
+        <div class="grid gap-12">
+          <!-- DevSpace -->
+          <div class="bg-[#1C1F21]/50 rounded-2xl p-8 backdrop-blur-sm">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="relative group">
+                <img
+                  src="img/devspace.png"
+                  alt="DevSpace Screenshot"
+                  class="project-image rounded-xl w-full shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
+                />
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                  <h2 class="text-4xl font-bold">DevSpace</h2>
+                  <span
+                    class="px-4 py-1 bg-[#3A3A3A] text-green-400 rounded-full text-sm"
+                  >
+                    Ativo
+                  </span>
+                </div>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                  Uma comunidade para ensinar programação do zero de aplicativos
+                  para Android utilizando a linguagem Kotlin. Através de aulas
+                  gravadas e ao vivo, suporte, plano de estudos e uma comunidade
+                  ativa, ajudamos pessoas a iniciarem e evoluírem na carreira de
+                  programação.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-auto">
+                  <span class="tech-tag">Education</span>
+                  <span class="tech-tag">Community</span>
+                  <span class="tech-tag">Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MentorSpace -->
+          <div class="bg-[#1C1F21]/50 rounded-2xl p-8 backdrop-blur-sm">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="relative group">
+                <a
+                  href="https://mentorspace.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="img/mentorspace.png"
+                    alt="MentorSpace Screenshot"
+                    class="project-image rounded-xl w-full shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
+                  />
+                </a>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                  <h2 class="text-4xl font-bold">MentorSpace</h2>
+                  <span
+                    class="px-4 py-1 bg-[#3A3A3A] text-yellow-400 rounded-full text-sm"
+                  >
+                    Em Desenvolvimento
+                  </span>
+                </div>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                  Uma plataforma de mentoria alimentada por IA que cria caminhos
+                  de aprendizado estruturados para ajudar os usuários a
+                  atingirem seus objetivos. Receba orientação personalizada,
+                  acompanhe seu progresso e aprenda com um mentor de IA que se
+                  adapta às suas necessidades.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-auto">
+                  <span class="tech-tag">AI</span>
+                  <span class="tech-tag">MentorShip</span>
+                  <span class="tech-tag">Education</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- YouZit -->
+          <div class="bg-[#1C1F21]/50 rounded-2xl p-8 backdrop-blur-sm">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div class="relative group">
+                <a
+                  href="https://youzit.ai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src="img/youzit.png"
+                    alt="YouZit Screenshot"
+                    class="project-image rounded-xl w-full shadow-lg transition-transform duration-300 group-hover:scale-[1.02] cursor-pointer"
+                  />
+                </a>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex items-center justify-between mb-4">
+                  <h2 class="text-4xl font-bold">YouZit</h2>
+                  <span
+                    class="px-4 py-1 bg-[#3A3A3A] text-yellow-400 rounded-full text-sm"
+                  >
+                    Em Desenvolvimento
+                  </span>
+                </div>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                  Uma plataforma alimentada por IA para criadores de conteúdo
+                  construírem e gerenciarem seu ecossistema de conteúdo. Obtenha
+                  insights inteligentes, ideias de conteúdo e recomendações
+                  estratégicas para aumentar seu público e melhorar o
+                  engajamento.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-auto">
+                  <span class="tech-tag">Content Creation</span>
+                  <span class="tech-tag">AI</span>
+                  <span class="tech-tag">Analytics</span>
+                  <span class="tech-tag">Social Media</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-400 text-sm">
+      <div class="container mx-auto px-4">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Vercel
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Add modal at the end of body, before closing tag -->
+    <div
+      id="imageModal"
+      class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4"
+    >
+      <div class="relative max-w-5xl w-full">
+        <button
+          onclick="closeModal()"
+          class="absolute -top-12 right-0 text-white/80 hover:text-white text-xl"
+        >
+          ✕
+        </button>
+        <img
+          id="modalImage"
+          src=""
+          alt=""
+          class="w-full h-full object-contain rounded-lg"
+        />
+      </div>
+    </div>
+
+    <!-- Add JavaScript before closing body tag -->
+    <script>
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const projectImages = document.querySelectorAll(".project-image");
+
+      projectImages.forEach((img) => {
+        img.addEventListener("click", (e) => {
+          e.preventDefault();
+          modalImg.src = img.src;
+          modalImg.alt = img.alt;
+          modal.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeModal() {
+        modal.classList.add("hidden");
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking outside the image
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Close modal with Escape key
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          closeModal();
+        }
+      });
+    </script>
+  </body>
+</html>

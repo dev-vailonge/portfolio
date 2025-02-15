@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #1c1f21;
+}
+
+.action-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.action-button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navigation link hover effect */
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Add blur effect to fixed navigation */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .action-button {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+.content-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.content-card:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  transform: translateY(-2px);
+}
+
+.icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+}
+
+/* Ensure smooth transitions for all interactive elements */
+.transition-opacity {
+  transition: opacity 0.3s ease;
+}
+
+/* Update project card styles */
+.project-card {
+  background-color: rgba(28, 31, 33, 0.5);
+  border-radius: 1rem;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+}
+
+.tech-tag {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.tech-tag:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+/* Remove previous card-specific styles that were causing issues */
+.project-card .flex,
+.project-card img {
+  height: auto;
+  min-height: auto;
+}
+
+/* Add these styles for image hover effects */
+.group {
+  cursor: pointer;
+}
+
+.group img {
+  transform-origin: center;
+  backface-visibility: hidden;
+}
+
+.group:hover img {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Add to your existing styles.css */
+.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.group {
+  transition: opacity 0.3s ease;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parcerias - Roque Buarque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21",
+              "button-gray": "rgba(255, 255, 255, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold flex items-center gap-2"
+        >
+          Roque Buarque
+        </a>
+        <div class="flex gap-8">
+          <a href="about.html" class="hover:text-gray-300 transition-colors"
+            >Sobre</a
+          >
+          <a href="content.html" class="hover:text-gray-300 transition-colors"
+            >Conteúdo</a
+          >
+          <a href="projects.html" class="hover:text-gray-300 transition-colors"
+            >Projetos</a
+          >
+          <a href="books.html" class="hover:text-gray-300 transition-colors"
+            >Livros</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Partnership Section -->
+    <main class="pt-32 min-h-screen container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12">Parcerias</h1>
+
+        <div class="space-y-8">
+          <!-- Introduction -->
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">
+              Vamos Trabalhar Juntos? 🤝
+            </h3>
+            <p class="text-gray-400 leading-relaxed">
+              Estou sempre aberto a parcerias interessantes que agreguem valor à
+              comunidade de desenvolvedores. Se você tem um produto, serviço ou
+              conteúdo relevante para programadores, vamos conversar!
+            </p>
+          </div>
+
+          <!-- Audience -->
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Minha Audiência 📊</h3>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Desenvolvedores de software em diferentes níveis
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Profissionais buscando transição de carreira para tecnologia
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Programadores interessados em empreendedorismo
+              </li>
+            </ul>
+          </div>
+
+          <!-- Partnership Types -->
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Tipos de Parcerias 🎯</h3>
+            <ul class="space-y-3 text-gray-400">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Conteúdo patrocinado para YouTube
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Posts patrocinados em newsletter
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Sequência de stories patrocinadas
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Reviews de produtos/serviços
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-400 rounded-full"></span>
+                Webinars e workshops
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="content-card">
+            <h3 class="text-2xl font-semibold mb-4">Entre em Contato 📧</h3>
+            <p class="text-gray-400 leading-relaxed mb-6">
+              Para discutir oportunidades de parceria, envie um email para:
+            </p>
+            <a
+              href="mailto:parcerias@roquebuarque.com.br"
+              class="text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              parcerias@roquebuarque.com.br
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 py-8 text-center text-gray-400 text-sm">
+      <div class="container mx-auto px-6">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Vercel
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

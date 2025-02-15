@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roque Buarque - Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21", // Dark background color from image
+              "button-gray": "rgba(255, 255, 255, 0.1)", // Semi-transparent white for buttons
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Add Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold flex items-center gap-2"
+        >
+          Roque Buarque
+        </a>
+        <div class="flex gap-8">
+          <a href="about.html" class="hover:text-gray-300 transition-colors"
+            >Sobre</a
+          >
+          <a href="content.html" class="hover:text-gray-300 transition-colors"
+            >Conteúdo</a
+          >
+          <a href="projects.html" class="hover:text-gray-300 transition-colors"
+            >Projetos</a
+          >
+          <a href="books.html" class="hover:text-gray-300 transition-colors"
+            >Livros</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main
+      class="pt-32 min-h-screen flex flex-col items-center justify-center text-center px-4"
+    >
+      <div class="max-w-4xl mx-auto flex flex-col items-center">
+        <img
+          src="img/roque.png"
+          alt="Roque Buarque"
+          class="w-32 h-32 rounded-full mb-8 border-2 border-white/10"
+        />
+        <h1 class="text-4xl font-bold mb-4">Roque Buarque</h1>
+        <h2 class="text-xl text-gray-400 mb-8">
+          Android Software Engineer @Spotify
+        </h2>
+
+        <!-- Action Buttons -->
+        <div class="flex gap-4 flex-wrap justify-center">
+          <a href="about.html" class="action-button">Sobre</a>
+          <a href="content.html" class="action-button">Conteúdo</a>
+          <a href="projects.html" class="action-button">Projetos</a>
+          <a href="books.html" class="action-button">Livros</a>
+        </div>
+        <div class="text-center mt-6">
+          <a
+            href="partnership.html"
+            class="text-gray-400 hover:text-blue-400 transition-colors"
+          >
+            Parcerias?
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-400 text-sm">
+      <div class="container mx-auto px-4">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vercel
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

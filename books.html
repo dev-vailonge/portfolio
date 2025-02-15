@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livros - Roque Buarque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21",
+              "button-gray": "rgba(255, 255, 255, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold flex items-center gap-2"
+        >
+          Roque Buarque
+        </a>
+        <div class="flex gap-8">
+          <a href="about.html" class="hover:text-gray-300 transition-colors"
+            >Sobre</a
+          >
+          <a href="content.html" class="hover:text-gray-300 transition-colors"
+            >Conteúdo</a
+          >
+          <a href="projects.html" class="hover:text-gray-300 transition-colors"
+            >Projetos</a
+          >
+          <a href="books.html" class="text-blue-400 transition-colors"
+            >Livros</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-32 container mx-auto px-6">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12">Livros Recomendados</h1>
+
+        <div class="mb-8 flex flex-wrap gap-3">
+          <button
+            class="px-3 py-1.5 rounded-full bg-white/10 text-sm hover:bg-white/20 transition-colors text-gray-400 hover:text-white data-[active=true]:bg-blue-500 data-[active=true]:text-white"
+            data-filter="all"
+            data-active="true"
+          >
+            Todos
+          </button>
+          <button
+            class="px-3 py-1.5 rounded-full bg-white/10 text-sm hover:bg-white/20 transition-colors text-gray-400 hover:text-white data-[active=true]:bg-blue-500 data-[active=true]:text-white"
+            data-filter="Technical"
+            data-active="false"
+          >
+            Técnico
+          </button>
+          <button
+            class="px-3 py-1.5 rounded-full bg-white/10 text-sm hover:bg-white/20 transition-colors text-gray-400 hover:text-white data-[active=true]:bg-blue-500 data-[active=true]:text-white"
+            data-filter="Non-Technical"
+            data-active="false"
+          >
+            Não Técnico
+          </button>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
+        >
+          <!-- Lifelong Learning -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Non-Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/71Sythr0jSS._SY522_.jpg"
+                  alt="Lifelong Learning book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Lifelong learning
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Conrado Schlochauer
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Continue aprendendo e se aperfeiçoando em um mundo que está em
+                constante mudança.
+              </p>
+            </div>
+          </div>
+
+          <!-- The Pragmatic Programmer -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/51W1sBPO7tL._SX380_BO1,204,203,200_.jpg"
+                  alt="The Pragmatic Programmer book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                The Pragmatic Programmer
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                David Thomas, Andrew Hunt
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                De aprendiz a mestre - uma abordagem moderna para práticas de
+                desenvolvimento de software.
+              </p>
+            </div>
+          </div>
+
+          <!-- Design Patterns -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/619M-4xNINL._SX604_BO1,204,203,200_.jpg"
+                  alt="Cracking the Coding Interview book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Cracking the Coding Interview
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Gayle Laakmann McDowell
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Um guia completo que aborda as questões mais comuns em
+                entrevistas de programação.
+              </p>
+            </div>
+          </div>
+
+          <!-- Deep Work -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Non-Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/41G4-FBs1YS._SY445_SX342_.jpg"
+                  alt="Deep Work book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Deep Work
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Cal Newport
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                A capacidade de focar sem distrações em tarefas cognitivamente
+                exigentes. Um superpoder em nossa economia cada vez mais
+                competitiva.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kotlin in Action -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/71gWfGC2pGL._SY522_.jpg"
+                  alt="Kotlin in Action book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Kotlin in Action
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Dmitry Jemerov, Svetlana Isakova
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Um guia abrangente da linguagem de programação Kotlin, focando
+                em seus recursos e funcionalidades.
+              </p>
+            </div>
+          </div>
+
+          <!-- Essentialism -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Non-Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/412xENIOQDL._SY445_SX342_.jpg"
+                  alt="Essentialism book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Essentialism: The Disciplined Pursuit of Less
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Greg McKeown
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Uma disciplina sistemática para discernir o que é essencial,
+                eliminando tudo que não é, para que possamos fazer a maior
+                contribuição possível.
+              </p>
+            </div>
+          </div>
+
+          <!-- Test Driven Development -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/519D2u0o1EL._SX342_SY445_.jpg"
+                  alt="A Philosophy of Software Design book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                A Philosophy of Software Design
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                John Ousterhout
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Uma exploração profunda dos princípios de design de software e
+                gerenciamento de complexidade no desenvolvimento de software.
+              </p>
+            </div>
+          </div>
+
+          <!-- Refactoring -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/51k+BvsOl2L._SX400_BO1,204,203,200_.jpg"
+                  alt="Refactoring book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Refactoring
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Martin Fowler
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Melhorando o design do código existente - Um guia abrangente
+                para tornar o código mais limpo e fácil de manter.
+              </p>
+            </div>
+          </div>
+
+          <!-- Designing Data-Intensive Applications -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/91YfNb49PLL._SY522_.jpg"
+                  alt="Designing Data-Intensive Applications book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Designing Data-Intensive Applications
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Martin Kleppmann
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Uma análise profunda dos princípios e práticas de construção de
+                sistemas distribuídos em larga escala e processamento de dados.
+              </p>
+            </div>
+          </div>
+
+          <!-- Dependency Injection in .NET -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/41ZfhLpjLrL._SX342_SY445_.jpg"
+                  alt="Dependency Injection in .NET book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Dependency Injection in .NET
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Mark Seemann
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Um guia completo sobre os princípios e práticas de injeção de
+                dependência, com foco em aplicações .NET. Aborda padrões,
+                anti-padrões e melhores práticas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Million Dollar Weekend -->
+          <div class="group">
+            <div
+              class="bg-button-gray rounded-xl p-4 sm:p-6 hover:bg-white/20 transition-colors h-full flex flex-col"
+            >
+              <div class="flex justify-end mb-3 sm:mb-4">
+                <span class="px-2 py-0.5 bg-white/10 text-xs rounded-full">
+                  Non-Technical
+                </span>
+              </div>
+              <div
+                class="aspect-[3/4] mb-4 sm:mb-6 overflow-hidden rounded-lg bg-white/5"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/41kG0dpKr9L._SY445_SX342_.jpg"
+                  alt="Million Dollar Weekend book cover"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+              <h3
+                class="text-lg sm:text-xl font-semibold mb-1 sm:mb-2 truncate"
+              >
+                Million Dollar Weekend
+              </h3>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-2 sm:mb-4 truncate"
+              >
+                Noah Kagan
+              </p>
+              <p
+                class="text-gray-400 text-sm sm:text-base mb-4 sm:mb-8 line-clamp-3"
+              >
+                Um guia prático para transformar suas ideias em um negócio
+                lucrativo em apenas um final de semana.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-24 py-8 text-center text-gray-400 text-sm">
+      <div class="container mx-auto px-6">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Vercel
+          </a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterButtons = document.querySelectorAll("[data-filter]");
+        const bookCards = document.querySelectorAll(".group");
+
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            // Update active state for all buttons
+            filterButtons.forEach((btn) => {
+              btn.setAttribute("data-active", "false");
+            });
+            // Set active state for clicked button
+            button.setAttribute("data-active", "true");
+
+            const filterValue = button.getAttribute("data-filter");
+
+            bookCards.forEach((card) => {
+              const tag = card
+                .querySelector(".px-2.py-0\\.5")
+                .textContent.trim();
+
+              if (filterValue === "all" || filterValue === tag) {
+                card.style.display = "";
+                card.style.opacity = "1";
+              } else {
+                card.style.display = "none";
+                card.style.opacity = "0";
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

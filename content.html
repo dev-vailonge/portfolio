@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conteúdo - Roque Buarque</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21",
+              "button-gray": "rgba(255, 255, 255, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a
+          href="index.html"
+          class="text-xl font-semibold flex items-center gap-2"
+        >
+          Roque Buarque
+        </a>
+        <div class="flex gap-8">
+          <a href="about.html" class="hover:text-gray-300 transition-colors"
+            >Sobre</a
+          >
+          <a href="content.html" class="text-blue-400 transition-colors"
+            >Conteúdo</a
+          >
+          <a href="projects.html" class="hover:text-gray-300 transition-colors"
+            >Projetos</a
+          >
+          <a href="books.html" class="hover:text-gray-300 transition-colors"
+            >Livros</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Section -->
+    <main class="pt-32 min-h-screen container mx-auto px-4">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl font-bold mb-12 text-center">Conteúdo & Social</h1>
+
+        <!-- Content Grid -->
+        <div class="grid gap-6">
+          <!-- Newsletter -->
+          <a
+            href="https://oprogramadorindependente.substack.com/"
+            class="content-card group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="flex items-center gap-6">
+              <div class="icon-wrapper bg-blue-500/10 text-blue-400">
+                <i class="fas fa-envelope text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h2
+                  class="text-xl font-semibold group-hover:text-blue-400 transition-colors"
+                >
+                  Newsletter
+                </h2>
+                <p class="text-gray-400">
+                  Insights semanais sobre desenvolvimento Android e engenharia
+                  de software
+                </p>
+              </div>
+              <i
+                class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"
+              ></i>
+            </div>
+          </a>
+
+          <!-- YouTube -->
+          <a
+            href="https://www.youtube.com/@devvailonge"
+            class="content-card group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="flex items-center gap-6">
+              <div class="icon-wrapper bg-red-500/10 text-red-400">
+                <i class="fab fa-youtube text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h2
+                  class="text-xl font-semibold group-hover:text-red-400 transition-colors"
+                >
+                  YouTube
+                </h2>
+                <p class="text-gray-400">
+                  Tutoriais em vídeo e palestras sobre desenvolvimento mobile
+                </p>
+              </div>
+              <i
+                class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"
+              ></i>
+            </div>
+          </a>
+
+          <!-- Instagram -->
+          <a
+            href="https://www.instagram.com/devvailonge/"
+            class="content-card group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="flex items-center gap-6">
+              <div class="icon-wrapper bg-purple-500/10 text-purple-400">
+                <i class="fab fa-instagram text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h2
+                  class="text-xl font-semibold group-hover:text-purple-400 transition-colors"
+                >
+                  Instagram
+                </h2>
+                <p class="text-gray-400">
+                  Bastidores e insights diários sobre tecnologia
+                </p>
+              </div>
+              <i
+                class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"
+              ></i>
+            </div>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/roque-buarque-junior-b33aa966/"
+            class="content-card group"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div class="flex items-center gap-6">
+              <div class="icon-wrapper bg-blue-600/10 text-blue-400">
+                <i class="fab fa-linkedin-in text-2xl"></i>
+              </div>
+              <div class="flex-1">
+                <h2
+                  class="text-xl font-semibold group-hover:text-blue-400 transition-colors"
+                >
+                  LinkedIn
+                </h2>
+                <p class="text-gray-400">
+                  Atualizações profissionais e insights da indústria
+                </p>
+              </div>
+              <i
+                class="fas fa-arrow-right opacity-0 group-hover:opacity-100 transition-opacity"
+              ></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-400 text-sm">
+      <div class="container mx-auto px-4">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white hover:text-gray-300 transition-colors"
+          >
+            Vercel
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
