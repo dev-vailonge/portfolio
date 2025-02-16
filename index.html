@@ -3,105 +3,654 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roque Buarque - Portfólio</title>
+    <title>YouZit - Seu Assistente de Ecossistema de Conteúdo com IA</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              dark: "#1C1F21", // Dark background color from image
-              "button-gray": "rgba(255, 255, 255, 0.1)", // Semi-transparent white for buttons
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-dark text-white min-h-screen">
-    <!-- Updated Navigation -->
-    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
-      <div class="container mx-auto px-6 py-4">
-        <div
-          class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
-        >
-          <a href="index.html" class="text-xl font-semibold"> Roque Buarque </a>
-          <div class="flex flex-wrap gap-4 sm:gap-8">
-            <a href="about.html" class="hover:text-gray-300 transition-colors"
-              >Sobre</a
-            >
-            <a href="content.html" class="hover:text-gray-300 transition-colors"
-              >Conteúdo</a
+  <body class="font-['Inter'] bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white fixed w-full z-50 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="#" class="text-xl font-semibold">YouZit</a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="#features"
+              class="text-gray-500 hover:text-indigo-600 transition"
+              >Recursos</a
             >
             <a
-              href="projects.html"
-              class="hover:text-gray-300 transition-colors"
-              >Projetos</a
+              href="#pricing"
+              class="text-gray-500 hover:text-indigo-600 transition"
+              >Preços</a
             >
-            <a href="books.html" class="hover:text-gray-300 transition-colors"
-              >Livros</a
+            <button
+              onclick="document.getElementById('waitlist').scrollIntoView({behavior: 'smooth'})"
+              class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition"
             >
+              Entrar na Lista
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-gray-500 hover:text-gray-700"
+            id="mobile-menu-button"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="#features"
+              class="block px-3 py-2 text-gray-500 hover:text-indigo-600 transition"
+            >
+              Recursos
+            </a>
+            <a
+              href="#pricing"
+              class="block px-3 py-2 text-gray-500 hover:text-indigo-600 transition"
+            >
+              Preços
+            </a>
+            <button
+              onclick="document.getElementById('waitlist').scrollIntoView({behavior: 'smooth'}); document.getElementById('mobile-menu').classList.add('hidden');"
+              class="w-full text-left px-3 py-2 text-white bg-indigo-600 rounded-lg hover:bg-indigo-700 transition"
+            >
+              Entrar na Lista
+            </button>
           </div>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <main
-      class="pt-32 min-h-screen flex flex-col items-center justify-center text-center px-4"
-    >
-      <div class="max-w-4xl mx-auto flex flex-col items-center">
-        <img
-          src="img/roque.png"
-          alt="Roque Buarque"
-          class="w-32 h-32 rounded-full mb-8 border-2 border-white/10"
-        />
-        <h1 class="text-4xl font-bold mb-4">Roque Buarque</h1>
-        <h2 class="text-xl text-gray-400 mb-8">
-          Android Software Engineer @Spotify
-        </h2>
+    <section class="pt-32 pb-20">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            Construa seu ecossistema de conteúdo em minutos
+          </h1>
+          <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Diga adeus ao planejamento interminável e plataformas dispersas.
+            YouZit pode ajudar você a criar uma estratégia de conteúdo
+            profissional que <span class="italic">gera engajamento</span> e
+            atrai audiência.
+          </p>
 
-        <!-- Action Buttons -->
-        <div class="flex gap-4 flex-wrap justify-center">
-          <a href="about.html" class="action-button">Sobre</a>
-          <a href="content.html" class="action-button">Conteúdo</a>
-          <a href="projects.html" class="action-button">Projetos</a>
-          <a href="books.html" class="action-button">Livros</a>
-        </div>
-        <div class="text-center mt-6">
-          <a
-            href="partnership.html"
-            class="text-gray-400 hover:text-blue-400 transition-colors"
-          >
-            Parcerias?
-          </a>
+          <!-- Email Input -->
+          <div class="max-w-md mx-auto mb-16">
+            <div class="flex flex-col md:flex-row gap-4">
+              <input
+                type="email"
+                id="email-input"
+                placeholder="seu@email.com"
+                class="flex-1 px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent"
+              />
+              <button
+                onclick="validateAndSubmit()"
+                class="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition flex items-center justify-center gap-2"
+              >
+                Entrar na Lista
+                <svg
+                  class="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+            <span id="email-error" class="text-red-500 text-sm mt-2 hidden"
+              >Por favor, insira um email válido</span
+            >
+          </div>
+
+          <!-- Product Screenshot -->
+          <div class="px-4 md:px-0 -mx-4 md:mx-0">
+            <div
+              class="rounded-none md:rounded-xl overflow-hidden shadow-lg md:shadow-2xl border-0 md:border md:border-gray-200 bg-white"
+            >
+              <img
+                src="img/youzit.png"
+                alt="YouZit Dashboard"
+                class="w-full h-auto object-contain max-w-full"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </main>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="py-20 bg-gray-900 text-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6">
+            Impressione com uma estratégia de conteúdo que te destaca.
+          </h2>
+          <p class="text-base md:text-xl text-gray-300 max-w-2xl mx-auto">
+            Uma abordagem dispersa de conteúdo pode prejudicar o crescimento da
+            sua marca. YouZit ajuda você a criar uma estratégia de conteúdo
+            polida e coesa que apresenta sua mensagem de forma eficaz e se
+            destaca do ruído.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 md:gap-12 max-w-4xl mx-auto">
+          <!-- Pain Point 1 -->
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl mb-3 md:mb-4">👩‍💻</div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">
+              8+ hrs planejando conteúdo
+            </h3>
+            <p class="text-sm md:text-base text-gray-400">
+              Perde tempo alternando entre múltiplas plataformas e ferramentas
+            </p>
+          </div>
+
+          <!-- Pain Point 2 -->
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl mb-3 md:mb-4">😩</div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">
+              Dificuldade com consistência
+            </h3>
+            <p class="text-sm md:text-base text-gray-400">
+              Difícil manter um cronograma regular de postagens
+            </p>
+          </div>
+
+          <!-- Pain Point 3 -->
+          <div class="text-center">
+            <div class="text-3xl md:text-4xl mb-3 md:mb-4">😔</div>
+            <h3 class="text-lg md:text-xl font-semibold mb-2">
+              Baixas taxas de engajamento
+            </h3>
+            <p class="text-sm md:text-base text-gray-400">
+              Conteúdo não alcança ou ressoa com a audiência
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            Nossos Recursos
+          </h2>
+          <p class="text-lg text-gray-600">
+            Descubra como o YouZit potencializa seu ecossistema de conteúdo
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <!-- Content Board -->
+          <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+            <div class="mb-6">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM7 7h10M7 12h10M7 17h10"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Painel de Conteúdo</h3>
+            <p class="text-gray-600 text-sm">
+              Gerencie todo seu conteúdo em um painel centralizado
+            </p>
+          </div>
+
+          <!-- AI Assistant -->
+          <div class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+            <div class="mb-6">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M12 8v8m-4-4h8m4 0a8 8 0 11-16 0 8 8 0 0116 0z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Assistente IA</h3>
+            <p class="text-gray-600 text-sm">
+              Receba sugestões inteligentes para sua estratégia de conteúdo
+            </p>
+          </div>
+
+          <!-- Analytics -->
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm opacity-75"
+          >
+            <div class="mb-6">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M3 12h4l3-9 4 18 3-9h4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Análises</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Acompanhe o desempenho e insights em todas as plataformas
+            </p>
+            <span
+              class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm"
+            >
+              Em Breve
+            </span>
+          </div>
+
+          <!-- Schedule -->
+          <div
+            class="bg-white p-8 rounded-xl border border-gray-200 shadow-sm opacity-75"
+          >
+            <div class="mb-6">
+              <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                <rect
+                  width="18"
+                  height="16"
+                  x="3"
+                  y="4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  rx="2"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  d="M3 10h18M8 2v4M16 2v4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-3">Agendamento</h3>
+            <p class="text-gray-600 text-sm mb-3">
+              Planeje e automatize seu fluxo de publicação de conteúdo
+            </p>
+            <span
+              class="inline-block px-3 py-1 bg-indigo-100 text-indigo-600 rounded-full text-sm"
+            >
+              Em Breve
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+            Preços Simples
+          </h2>
+          <p class="text-lg text-gray-600 mb-4">
+            Escolha o plano que melhor atende suas necessidades
+          </p>
+          <p class="text-sm text-gray-500 mb-12">
+            Os preços aumentarão após 100 pessoas entrarem na versão beta
+          </p>
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Free Plan -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h3 class="text-xl font-semibold mb-4">Gratuito</h3>
+              <div class="text-4xl font-bold mb-4">R$0</div>
+              <p class="text-gray-500 mb-6">5 prompts/mês</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Painel de conteúdo básico
+                </li>
+              </ul>
+            </div>
+
+            <!-- Monthly Plan -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h3 class="text-xl font-semibold mb-4">Mensal</h3>
+              <div class="text-4xl font-bold mb-4">
+                <span class="text-gray-400 text-lg line-through">R$74,90</span>
+                R$49,90
+                <span class="text-base font-normal text-gray-500">/mês</span>
+              </div>
+              <p class="text-gray-500 mb-6">50 prompts/mês</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Tudo do plano Gratuito
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Recursos avançados
+                </li>
+              </ul>
+            </div>
+
+            <!-- Yearly Plan -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+              <h3 class="text-xl font-semibold mb-4">Anual</h3>
+              <div class="text-4xl font-bold mb-4">
+                <span class="text-gray-400 text-lg line-through">R$990</span>
+                R$490
+                <span class="text-base font-normal text-gray-500">/ano</span>
+              </div>
+              <p class="text-gray-500 mb-6">100 prompts/mês</p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Tudo do plano Mensal
+                </li>
+                <li class="flex items-center text-gray-600">
+                  <svg
+                    class="w-5 h-5 text-green-500 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  Suporte prioritário
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Waitlist -->
+    <section id="waitlist" class="py-20 bg-indigo-600">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-white mb-6">
+            Entre na Lista de Espera
+          </h2>
+          <p class="text-indigo-100 mb-8">
+            Seja um dos primeiros a experimentar o futuro da criação de conteúdo
+          </p>
+          <form
+            class="flex flex-col gap-4 max-w-md mx-auto"
+            onsubmit="return false;"
+          >
+            <div class="flex flex-col gap-4">
+              <input
+                type="email"
+                id="waitlist-email"
+                placeholder="Digite seu email"
+                class="px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white"
+              />
+              <button
+                onclick="validateWaitlistEmail()"
+                class="bg-white text-indigo-600 px-6 py-3 rounded-lg hover:bg-indigo-50 transition"
+              >
+                Entrar Agora
+              </button>
+            </div>
+            <span id="waitlist-error" class="text-indigo-200 text-sm"></span>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="text-center py-8 text-gray-400 text-sm">
+    <footer class="bg-gray-100 py-12">
       <div class="container mx-auto px-4">
-        <p>
-          Construído com
-          <a
-            href="https://tailwindcss.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Tailwind CSS
-          </a>
-          • Hospedado na
-          <a
-            href="https://vercel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vercel
-          </a>
-        </p>
+        <div class="grid grid-cols-2 max-w-4xl mx-auto gap-8">
+          <!-- Company Info -->
+          <div>
+            <span class="text-lg">YouZit</span>
+            <p class="text-gray-600">
+              Seu assistente de ecossistema de conteúdo com IA
+            </p>
+            <p class="text-gray-500 text-sm mt-4">
+              Copyright © 2025 - Todos os direitos reservados
+            </p>
+          </div>
+
+          <!-- Legal -->
+          <div>
+            <h3 class="text-gray-500 uppercase text-sm mb-4">Legal</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="terms.html"
+                  class="text-gray-500 hover:text-indigo-600 transition"
+                  >Termos de serviço</a
+                >
+              </li>
+              <li>
+                <a
+                  href="privacy.html"
+                  class="text-gray-500 hover:text-indigo-600 transition"
+                  >Política de privacidade</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
+
+    <!-- Add this script at the end of body -->
+    <script>
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking a link
+      const mobileLinks = mobileMenu.querySelectorAll("a");
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      async function validateAndSubmit() {
+        const emailInput = document.getElementById("email-input");
+        const emailError = document.getElementById("email-error");
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailRegex.test(emailInput.value)) {
+          emailError.classList.add("hidden");
+
+          try {
+            const response = await fetch(
+              "https://youzit-dev-vailonges-projects.vercel.app/api/saveEmail",
+              {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email: emailInput.value }),
+              }
+            );
+
+            if (response.ok) {
+              window.location.href = "thank-you.html";
+            } else {
+              throw new Error("Failed to register email");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            emailError.textContent =
+              "Falha ao entrar na lista. Por favor, tente novamente.";
+            emailError.classList.remove("hidden");
+          }
+        } else {
+          emailError.textContent = "Por favor, insira um email válido";
+          emailError.classList.remove("hidden");
+          emailInput.focus();
+        }
+      }
+
+      // Also validate on Enter key
+      document
+        .getElementById("email-input")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            validateAndSubmit();
+          }
+        });
+
+      // Hide error message when user starts typing
+      document
+        .getElementById("email-input")
+        .addEventListener("input", function () {
+          document.getElementById("email-error").classList.add("hidden");
+        });
+
+      async function validateWaitlistEmail() {
+        const emailInput = document.getElementById("waitlist-email");
+        const emailError = document.getElementById("waitlist-error");
+        const submitButton = emailInput.nextElementSibling;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        // Reset error state
+        emailError.textContent = "";
+        emailError.classList.add("hidden");
+
+        if (!emailRegex.test(emailInput.value)) {
+          emailError.textContent = "Por favor, insira um email válido";
+          emailError.classList.remove("hidden");
+          emailInput.focus();
+          return;
+        }
+
+        try {
+          // Disable button and show loading state
+          submitButton.disabled = true;
+          submitButton.textContent = "Entrando...";
+
+          const response = await fetch(
+            "https://youzit-dev-vailonges-projects.vercel.app/api/saveEmail",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: emailInput.value }),
+            }
+          );
+
+          if (response.ok) {
+            window.location.href = "thank-you.html";
+          } else {
+            throw new Error("Failed to register email");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          emailError.textContent =
+            "Falha ao entrar na lista. Por favor, tente novamente.";
+          emailError.classList.remove("hidden");
+
+          // Reset button state
+          submitButton.disabled = false;
+          submitButton.textContent = "Entrar Agora";
+        }
+      }
+
+      // Add Enter key support
+      document
+        .getElementById("waitlist-email")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            validateWaitlistEmail();
+          }
+        });
+
+      // Clear error on typing
+      document
+        .getElementById("waitlist-email")
+        .addEventListener("input", function () {
+          document.getElementById("waitlist-error").classList.add("hidden");
+        });
+    </script>
   </body>
 </html>
