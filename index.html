@@ -3,137 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Política de Privacidade - YouZit</title>
+    <title>Roque Buarque - Portfólio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              dark: "#1C1F21", // Dark background color from image
+              "button-gray": "rgba(255, 255, 255, 0.1)", // Semi-transparent white for buttons
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="font-['Inter'] bg-gray-50">
-    <!-- Navbar -->
-    <nav class="bg-white w-full shadow-sm">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
-          <a href="index.html" class="text-xl font-semibold">YouZit</a>
+  <body class="bg-dark text-white min-h-screen">
+    <!-- Updated Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark/95 backdrop-blur-sm">
+      <div class="container mx-auto px-6 py-4">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+        >
+          <a href="index.html" class="text-xl font-semibold"> Roque Buarque </a>
+          <div class="flex flex-wrap gap-4 sm:gap-8">
+            <a href="about.html" class="hover:text-gray-300 transition-colors"
+              >Sobre</a
+            >
+            <a href="content.html" class="hover:text-gray-300 transition-colors"
+              >Conteúdo</a
+            >
+            <a
+              href="projects.html"
+              class="hover:text-gray-300 transition-colors"
+              >Projetos</a
+            >
+            <a href="books.html" class="hover:text-gray-300 transition-colors"
+              >Livros</a
+            >
+          </div>
         </div>
       </div>
     </nav>
 
-    <!-- Privacy Content -->
-    <main class="py-16 px-4">
-      <div class="max-w-3xl mx-auto">
-        <h1 class="text-4xl font-bold text-gray-900 mb-8">
-          Política de Privacidade
-        </h1>
+    <!-- Hero Section -->
+    <main
+      class="pt-32 min-h-screen flex flex-col items-center justify-center text-center px-4"
+    >
+      <div class="max-w-4xl mx-auto flex flex-col items-center">
+        <img
+          src="img/roque.png"
+          alt="Roque Buarque"
+          class="w-32 h-32 rounded-full mb-8 border-2 border-white/10"
+        />
+        <h1 class="text-4xl font-bold mb-4">Roque Buarque</h1>
+        <h2 class="text-xl text-gray-400 mb-8">
+          Android Software Engineer @Spotify
+        </h2>
 
-        <div class="prose prose-indigo max-w-none">
-          <p class="text-gray-600 mb-8">
-            Última atualização: 15 de Fevereiro de 2025
-          </p>
-
-          <section class="mb-12">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              1. Informações que Coletamos
-            </h2>
-            <p class="text-gray-600 mb-4">
-              Coletamos informações que você fornece diretamente ao usar o
-              YouZit:
-            </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4">
-              <li>Informações da conta (endereço de email)</li>
-              <li>Conteúdo que você cria e envia</li>
-              <li>Comunicações conosco</li>
-            </ul>
-          </section>
-
-          <section class="mb-12">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              2. Como Usamos Suas Informações
-            </h2>
-            <p class="text-gray-600 mb-4">
-              Usamos as informações que coletamos para:
-            </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4">
-              <li>Fornecer e melhorar nossos serviços</li>
-              <li>Enviar avisos técnicos e atualizações</li>
-              <li>Responder a seus comentários e perguntas</li>
-              <li>Monitorar e analisar tendências e uso</li>
-            </ul>
-          </section>
-
-          <section class="mb-12">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              3. Compartilhamento de Informações
-            </h2>
-            <p class="text-gray-600 mb-4">
-              Não compartilhamos suas informações pessoais com terceiros,
-              exceto:
-            </p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4">
-              <li>Com seu consentimento</li>
-              <li>Para cumprir obrigações legais</li>
-              <li>Para proteger nossos direitos e prevenir fraudes</li>
-            </ul>
-          </section>
-
-          <section class="mb-12">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              4. Segurança dos Dados
-            </h2>
-            <p class="text-gray-600 mb-4">
-              Tomamos medidas razoáveis para ajudar a proteger suas informações
-              pessoais contra perda, roubo, uso indevido, acesso não autorizado,
-              divulgação, alteração e destruição.
-            </p>
-          </section>
-
-          <section class="mb-12">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              5. Seus Direitos
-            </h2>
-            <p class="text-gray-600 mb-4">Você tem o direito de:</p>
-            <ul class="list-disc list-inside text-gray-600 space-y-2 mb-4">
-              <li>Acessar suas informações pessoais</li>
-              <li>Corrigir informações imprecisas</li>
-              <li>Solicitar a exclusão de suas informações</li>
-              <li>Optar por não receber comunicações de marketing</li>
-            </ul>
-          </section>
-
-          <section class="mb-12">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-              6. Alterações nesta Política
-            </h2>
-            <p class="text-gray-600 mb-4">
-              Podemos atualizar esta política de privacidade periodicamente.
-              Notificaremos você sobre quaisquer alterações publicando a nova
-              política de privacidade nesta página e atualizando a data de
-              "Última atualização".
-            </p>
-          </section>
+        <!-- Action Buttons -->
+        <div class="flex gap-4 flex-wrap justify-center">
+          <a href="about.html" class="action-button">Sobre</a>
+          <a href="content.html" class="action-button">Conteúdo</a>
+          <a href="projects.html" class="action-button">Projetos</a>
+          <a href="books.html" class="action-button">Livros</a>
         </div>
-
-        <div class="border-t border-gray-200 mt-16 pt-8">
-          <p class="text-gray-500 text-sm">
-            Para qualquer dúvida sobre esta Política de Privacidade, entre em
-            contato conosco em:
-            <a
-              href="mailto:support@youzitapp.com"
-              class="text-indigo-600 hover:text-indigo-700"
-              >support@youzitapp.com</a
-            >
-          </p>
+        <div class="text-center mt-6">
+          <a
+            href="partnership.html"
+            class="text-gray-400 hover:text-blue-400 transition-colors"
+          >
+            Parcerias?
+          </a>
         </div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-100 py-8">
-      <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
-        Copyright © 2025 YouZit - Todos os direitos reservados
+    <footer class="text-center py-8 text-gray-400 text-sm">
+      <div class="container mx-auto px-4">
+        <p>
+          Construído com
+          <a
+            href="https://tailwindcss.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tailwind CSS
+          </a>
+          • Hospedado na
+          <a
+            href="https://vercel.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vercel
+          </a>
+        </p>
       </div>
     </footer>
   </body>
